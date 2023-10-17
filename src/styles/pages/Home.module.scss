@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+.title {
+  color: $secondary-color;
+  h1 {
+    color: $primary-color;
+  }
+}
+
+.grid {
+  height: 100vh;
+  display: flex;
+  gap: 230px;
+}
+
+@include desktop() {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+    background-color: $primary-color;
+    div {
+      background-color: black;
+      color: white;
+    }
+  }
+}
